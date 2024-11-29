@@ -1,0 +1,110 @@
+:root{
+    --card-width: ;
+    --font-family: 'Space Grotesk', sans-serif;
+    --font-size: 18px;
+    --font-color: white;
+}
+/* Structure principale */
+body{
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-family);
+}
+/* Haut de page */
+.up{
+    background-image: url(bg-main-mobile.png);
+    height:30%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    color: var(--font-color);
+}
+/* Facecard */
+.facecard{
+    background-image: url(bg-card-front.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:70%;
+    width:60%;
+    padding:15px;
+    position: absolute;
+    left:5%;
+    top:50%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px;
+    
+}
+img{
+    height:30px;
+    width:50px;
+}
+.cardnum{
+    text-align: center;
+    font-size: 20px;
+}
+.cardinfo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+/* Backcard */
+.backcard{
+    background-image: url(bg-card-back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:70%;
+    width:60%;
+    position: relative;
+    left: 25%;
+    top:10%;
+    z-index: 1;
+}
+/* Bas de page */
+.down{
+    height:70%;
+    margin-top: 20%;
+}
+/* Formulaire */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:100%;
+    width:100%;
+    gap: 15px;
+    
+}
+#expmonth, #expyear , #cvc{
+    width: 100px;
+    height:30px;
+    border-radius: 5px;
+}
+#cardholder, #cardnumber{
+    width: 98%;
+    height:30px;
+    margin-top: 5px;
+}
+
+.expdate{
+    
+    display: flex;
+    gap:15px;
+}
+label{
+    display: block;
+    font-size: 12px;
+    gap: 5px;
+}
