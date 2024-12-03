@@ -3,7 +3,7 @@
     --font-family: 'Space Grotesk', sans-serif;
     --font-size: 18px;
     --font-color: white;
-    --card-height: 60%;
+    --card-height: 64%;
     
 }
 /* Structure principale */
@@ -37,6 +37,7 @@ main{
     left:5%;
     top:50%;
     padding: 15px;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,8 +74,8 @@ img{
 }
 #cv{
     
-    left: 170px;
-    top: 51px;
+    left: 185px;
+    top: 45px;
     font-size: 10px;    
 }
 /* Bas de page */
@@ -192,8 +193,7 @@ input#cvc{
         left:40%;
         height:21%;
         padding:30px;
-        width:80%;
-    
+        width: 80%;
         z-index: 2;
     }
     .cardnum{
